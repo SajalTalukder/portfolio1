@@ -78,13 +78,13 @@ let scroll = new SmoothScroll('a[href*="#"]', {
 gsap.registerPlugin(ScrollTrigger);
 gsap.from(".about__content", {
   scrollTrigger: ".about__content",
-  x: 300,
+  x: -300,
   duration: 1,
   opacity: 0,
 });
 gsap.from(".about__image", {
-  scrollTrigger: ".about__content",
-  x: -300,
+  scrollTrigger: ".about__image",
+  x: 300,
   duration: 1,
   opacity: 0,
 });

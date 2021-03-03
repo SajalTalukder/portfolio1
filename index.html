@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="profile">
+    <div class="profile" id="home">
       <div class="profile__image u-mb-mid">
         <img src="./portfolio/avatar-1.svg" alt="user" />
       </div>
@@ -36,7 +36,7 @@
     </div>
 
     <main>
-      <div class="about">
+      <div class="about" id="about">
         <h2 class="heading__standerd u-mb-ebig u-text-center">About Me</h2>
         <div class="row-1">
           <div class="col-2-of-1">
@@ -48,9 +48,9 @@
             <div class="about__content">
               <div class="about__para">
                 <p class="para-1 u-mb-mid">
-                  I am Bolby Doe, web developer from London, United Kingdom. I
+                  I am sajal talukder, web developer from Dhaka, bangladesh. I
                   have rich experience in web site design and building and
-                  customization, also I am good at WordPress.
+                  customization, also I am good at JavaScript.
                 </p>
                 <a href="#" class="btn">Download CV</a>
               </div>
@@ -138,7 +138,7 @@
         </div>
       </div>
 
-      <section class="section pg">
+      <section class="section pg" id="services">
         <h2 class="heading__standerd u-text-center">Services</h2>
         <div class="row-3">
           <div class="col-3-of-1">
@@ -192,11 +192,11 @@
         </div>
       </section>
 
-      <div class="section-1 pg">
+      <div class="section-1 pg" id="experience">
         <h2 class="heading__standerd u-text-center">Experience</h2>
         <div class="row-4">
           <div class="col-2-of-1">
-            <div class="work">
+            <div class="work work--1">
               <div class="work__icon-box">
                 <i class="fas fa-graduation-cap work__icon"></i>
               </div>
@@ -233,7 +233,7 @@
             </div>
           </div>
           <div class="col-2-of-1">
-            <div class="work">
+            <div class="work work--2">
               <div class="work__icon-box">
                 <i class="fas fa-briefcase work__icon"></i>
               </div>
@@ -271,7 +271,7 @@
           </div>
         </div>
       </div>
-      <div class="section-2 pg">
+      <div class="section-2 pg" id="work">
         <h2 class="heading__standerd u-text-center">Recent work</h2>
 
         <div class="row-3">
@@ -312,7 +312,9 @@
       </div>
 
       <div class="section-3 pg">
-        <h2 class="heading__standerd u-text-center">Pricing Plans</h2>
+        <h2 class="heading__standerd u-text-center" id="price">
+          Pricing Plans
+        </h2>
         <div class="row-5">
           <div class="col-1-of-3">
             <div class="price">
@@ -387,18 +389,42 @@
         </div>
       </div>
       <div class="section-4 pg">
-        <h2 class="heading__standerd u-text-center">Clients & Reviews</h2>
-        <div class="client u-text-center">
-          <div class="client__image u-mb-sm">
-            <img src="./portfolio/avatar-1.svg" alt="" />
+        <h2 class="heading__standerd u-text-center" id="review">
+          Clients & Reviews
+        </h2>
+        <div class="slider">
+          <div class="slide">
+            <div class="client u-text-center">
+              <div class="client__image u-mb-sm">
+                <img src="./portfolio/avatar-1.svg" alt="" />
+              </div>
+              <div class="client__name u-mb-sm">
+                <h2 class="heading__mid">Thomas</h2>
+              </div>
+              <p class="client__position u-mb-big">CEO of XYZ company</p>
+              <div class="client__review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati quas qui delectus inventore, beatae voluptatum
+                numquam?
+              </div>
+            </div>
           </div>
-          <div class="client__name u-mb-sm">
-            <h2 class="heading__mid">SAJAL</h2>
-          </div>
-          <p class="client__position u-mb-big">CEO of XYZ company</p>
-          <div class="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            quas qui delectus inventore, beatae voluptatum numquam?
+
+          <div class="slide">
+            <div class="client u-text-center">
+              <div class="client__image u-mb-sm">
+                <img src="./portfolio/avatar-2.svg" alt="" />
+              </div>
+              <div class="client__name u-mb-sm">
+                <h2 class="heading__mid">Jonas</h2>
+              </div>
+              <p class="client__position u-mb-big">CEO of XYZ company</p>
+              <div class="client__review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati quas qui delectus inventore, beatae voluptatum
+                numquam?
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -445,7 +471,7 @@
         </div>
       </div>
       <div class="section-5 pg">
-        <h2 class="heading__standerd u-text-center">Latest Posts</h2>
+        <h2 class="heading__standerd u-text-center" id="post">Latest Posts</h2>
         <div class="row-7">
           <div class="col-3-of-1">
             <div class="post">
@@ -492,7 +518,9 @@
         </div>
       </div>
       <div class="section-6 pg">
-        <h2 class="heading__standerd u-text-center">Get In Touch</h2>
+        <h2 class="heading__standerd u-text-center" id="contact">
+          Get In Touch
+        </h2>
         <div class="row-8">
           <div class="col-2-of-1">
             <div class="contact u-mt-ebig">
@@ -560,24 +588,46 @@
       <div class="navigation__overlay">
         <div class="nav">
           <ul class="nav__ul">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link">About Me</a>
+              <a href="#home" class="nav__link">Home</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Service</a></li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Experience</a>
+              <a href="#about" class="nav__link">About Me</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Price</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Post</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link">Price</a>
+            </li>
+            <li class="nav__item">
+              <a href="#review" class="nav__link">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a href="#post" class="nav__link">Post</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
+    <div class="top-bottom">
+      <a href="#home" class="top-bottom__link">
+        <i class="fas fa-arrow-up topbottom"></i
+      ></a>
+    </div>
     <!-- javaScript -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

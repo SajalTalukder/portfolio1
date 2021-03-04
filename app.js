@@ -84,7 +84,7 @@ gsap.from(".about__content", {
 });
 gsap.from(".about__image", {
   scrollTrigger: ".about__image",
-  x: 300,
+  x: -300,
   duration: 1,
   opacity: 0,
 });
@@ -104,7 +104,7 @@ gsap.from(".services", {
 });
 gsap.from(".work--1", {
   scrollTrigger: ".work--1",
-  x: 300,
+  x: -300,
   duration: 1,
   opacity: 0,
 });
